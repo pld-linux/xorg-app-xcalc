@@ -7,6 +7,8 @@ License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/xcalc-%{version}.tar.bz2
 # Source0-md5:	07b948cf671fde88df1a59bfb0cab3b8
+Source1:	xcalc.desktop
+Source2:	xcalc.png
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -41,6 +43,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -D %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/xcalc.desktop
+install -D %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/xcalc.png
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -49,4 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc COPYING ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/X11/app-defaults/*
+%{_desktopdir}/xcalc.desktop
+%{_pixmapsdir}/xcalc.png
 %{_mandir}/man1/*.1x*
