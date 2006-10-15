@@ -2,10 +2,10 @@ Summary:	xcalc application
 Summary(pl):	Aplikacja xcalc
 Name:		xorg-app-xcalc
 Version:	1.0.1
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/xcalc-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/xcalc-%{version}.tar.bz2
 # Source0-md5:	07b948cf671fde88df1a59bfb0cab3b8
 Source1:	xcalc.desktop
 Source2:	xcalc.png
@@ -52,8 +52,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
-%attr(755,root,root) %{_bindir}/*
-%{_datadir}/X11/app-defaults/*
+%attr(755,root,root) %{_bindir}/xcalc
+%{_datadir}/X11/app-defaults/XCalc*
 %{_desktopdir}/xcalc.desktop
 %{_pixmapsdir}/xcalc.png
-%{_mandir}/man1/*.1x*
+%{_mandir}/man1/xcalc.1x*
