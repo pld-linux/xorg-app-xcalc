@@ -1,5 +1,5 @@
 Summary:	xcalc application
-Summary(pl):	Aplikacja xcalc
+Summary(pl.UTF-8):   Aplikacja xcalc
 Name:		xorg-app-xcalc
 Version:	1.0.1
 Release:	1
@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 xcalc application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja xcalc.
 
 %prep
