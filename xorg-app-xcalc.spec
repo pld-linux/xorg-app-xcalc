@@ -1,5 +1,5 @@
-Summary:	xcalc application
-Summary(pl.UTF-8):	Aplikacja xcalc
+Summary:	xcalc application - scientific calculator for X
+Summary(pl.UTF-8):	Aplikacja xcalc - kalkulator naukowy dla X
 Name:		xorg-app-xcalc
 Version:	1.0.2
 Release:	1
@@ -20,10 +20,12 @@ Requires:	xorg-lib-libXt >= 1.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-xcalc application.
+xcalc is a scientific calculator desktop accessory that can emulate a
+TI-30 or an HP-10C.
 
 %description -l pl.UTF-8
-Aplikacja xcalc.
+xcalc to naukowy kalkulator dostępny na pulpicie, potrafiący emulować
+TI-30 lub HP-10C.
 
 %prep
 %setup -q -n xcalc-%{version}
