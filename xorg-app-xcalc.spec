@@ -1,12 +1,12 @@
 Summary:	xcalc application
 Summary(pl.UTF-8):	Aplikacja xcalc
 Name:		xorg-app-xcalc
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xcalc-%{version}.tar.bz2
-# Source0-md5:	07b948cf671fde88df1a59bfb0cab3b8
+# Source0-md5:	d31a99795b9668f047aa11bf36df6df0
 Source1:	xcalc.desktop
 Source2:	xcalc.png
 URL:		http://xorg.freedesktop.org/
