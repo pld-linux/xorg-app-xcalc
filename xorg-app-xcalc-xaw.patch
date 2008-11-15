@@ -1,0 +1,19 @@
+commit fd75efe1d9b57c483f7cedd9e2dce34b97eef75e
+Author: James Cloos <cloos@jhcloos.com>
+Date:   Wed Aug 20 10:32:49 2008 -0400
+
+    xaw8 is gone, use xaw7
+
+diff --git a/configure.ac b/configure.ac
+index ee20775..e46af40 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -31,7 +31,7 @@ AM_CONFIG_HEADER(config.h)
+ AC_PROG_CC
+ AC_PROG_INSTALL
+ 
+-XAW_CHECK_XPRINT_SUPPORT(XCALC)
++PKG_CHECK_MODULES(XCALC, xaw7)
+ 
+ AC_SUBST(XCALC_CFLAGS)
+ AC_SUBST(XCALC_LIBS)
