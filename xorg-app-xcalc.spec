@@ -1,18 +1,19 @@
 Summary:	xcalc application - scientific calculator for X
 Summary(pl.UTF-8):	Aplikacja xcalc - kalkulator naukowy dla X
 Name:		xorg-app-xcalc
-Version:	1.0.7
+Version:	1.1.0
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	https://xorg.freedesktop.org/releases/individual/app/xcalc-%{version}.tar.bz2
-# Source0-md5:	c0be45f8c26187474b763d634535d8d8
+# Source0-md5:	3b566e47c76356cecaa71eb431767ae1
 Source1:	xcalc.desktop
 Source2:	xcalc.png
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXaw-devel
 BuildRequires:	xorg-lib-libXt-devel >= 1.0.0
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.17
